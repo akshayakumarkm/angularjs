@@ -1,0 +1,19 @@
+  <div class="btn-group" dropdown >
+    <button id="button-animated" dropdownToggle type="button" class="btn"
+        aria-controls="dropdown-animated">
+        
+      Select an option 
+      <!--  <span class="caret"></span> -->
+    </button> 
+    <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu" 
+      role="menu" aria-labelledby="button-animated">
+      <li (click)="toggle()" *ngFor="let choice of items; let i = index">  
+        <a class="dropdown-item"(isOpenChange)="toggle(choice.name)">
+          {{choice.name}}
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+<!-- #newSelect [(ngModel)]="carbrand" (change)="onChange(carbrand)" -->

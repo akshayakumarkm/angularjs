@@ -1,0 +1,23 @@
+.btn-group{
+  margin-left: 30px;
+  margin-top: 3px;
+}
+.btn {
+    border:1px solid black;
+    width: 157px;
+    border-radius: 0px;
+    text-align: left;
+  }
+  .dropdown-menu {
+    max-height:150px;
+   overflow:scroll;
+   max-width: 200px;
+  }
+  
+  .dropdown-toggle{
+   width: 157px;
+   background-color: white;
+  }
+  .no{
+    background-color: white;
+  }
