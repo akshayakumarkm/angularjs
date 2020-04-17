@@ -1,16 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
-import { DetailsComponent } from './details/details.component';
+import { FrontviewComponent } from './frontview/frontview.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown'
 
 @NgModule({
   declarations: [
     AppComponent,
-    DetailsComponent
+    FrontviewComponent
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
